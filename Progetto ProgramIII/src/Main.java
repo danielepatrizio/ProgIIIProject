@@ -10,7 +10,7 @@ public class Main{
         int[] routerDstPorts = new int[5];
         ArrayList routingTableEntries = new ArrayList();
 
-    public static ArrayList<RoutingTableEntry>createRoutingTable(ArrayList<RoutingTableEntry>routingTableEntries, int[] routerSrcPorts, int[] routerDstPorts, int routerCount, int clientCount) {
+    public static ArrayList createRoutingTable(ArrayList<RoutingTableEntry>routingTableEntries, int[] routerSrcPorts, int[] routerDstPorts, int routerCount, int clientCount) {
         routingTableEntries = new ArrayList();
 
         for(int i = 0; i < 5; ++i) {
