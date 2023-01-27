@@ -1,4 +1,3 @@
-
 class ServerThread extends Thread {
 
 public ServerThread(String threadName){
@@ -9,7 +8,6 @@ public void run(){
         while(clientNumber !=100){
             System.out.println(this.getName() + " sent data to client " + clientNumber);
             clientNumber++;
+      }
+    }
 }
-}
-
-        }

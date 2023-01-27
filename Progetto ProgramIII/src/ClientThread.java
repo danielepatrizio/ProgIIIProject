@@ -1,14 +1,15 @@
 package socket;
-import java.net.*;
 import java.io.*;
+import java.net.*;
 
-public class ClientThread extends Thread
-{
+public class ClientThread extends Thread{
+
     private Socket socket = null;
     public ClientThread(Socket socket)
     {
-         this.socket = socket;
+        this.socket = socket;
     }
+
     public void run()
     {
         try
@@ -26,9 +27,6 @@ public class ClientThread extends Thread
         {
             System.out.println(e.toString());
         }
-
     }
 
-
 }
-

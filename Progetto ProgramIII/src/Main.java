@@ -6,7 +6,6 @@ import java.util.Queue;
 
 public class Main{
 
-
     //creazione porte per il router//
     public static void main(String[] args) {
       ServerThread thread = new ServerThread("Server1");
@@ -14,12 +13,12 @@ public class Main{
         thread2.setPriority(Thread.MAX_PRIORITY);
         System.out.println(thread2.getName() + " priority: " + thread2.getPriority());
       thread.start();
-        thread2.start();
+      thread2.start();
     }
+
+
     //lettura file
 public void GetFileInfo(){
-
-
 
         //Path della posizione su disco del file di testo che vogliamo leggere in input
         String pathFileName= "./folder/inputFile.txt";
