@@ -31,7 +31,7 @@ public void GetFileInfo(){
         try {
             scannerDaFile = new Scanner(inputFile);
 
-            System.out.println("------------------ STAMPA DEL FILE DI TESTO: "+inputFile.getName()+" ----------------------");
+            System.out.println("STAMPA DEL FILE DI TESTO: "+inputFile.getName()+"");
 
             while(scannerDaFile.hasNextLine()) {
                 System.out.println(scannerDaFile.nextLine());
@@ -73,18 +73,15 @@ public void GetFileInfo(){
         int size = q.size();
         System.out.println("Size of queue-" + size);
     }
+
+
     public static void grafo(String[] args) //grafo ordinato con dijkstra
     {
         //example graph is given below
         int graph[][] = new int[][] {
-                { 0, 2, 1, 0, 0, 0},
-                { 2, 0, 7, 0, 8, 4},
-                { 1, 7, 0, 7, 0, 3},
-                { 0, 0, 7, 0, 8, 4},
-                { 0, 8, 0, 8, 0, 5},
-                { 0, 4, 3, 4, 5, 0}
         };
         Graph_Shortest_Path g = new Graph_Shortest_Path();
         g.algo_dijkstra(graph, 0);
     }
+
 }
