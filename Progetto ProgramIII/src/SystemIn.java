@@ -1,5 +1,6 @@
 import java.io.*;
 
+// inserimento da User di porta e ip
 public class SystemIn {
     public static void main(String [] args){
         System.out.print("Inserisci numero della porta:  ");

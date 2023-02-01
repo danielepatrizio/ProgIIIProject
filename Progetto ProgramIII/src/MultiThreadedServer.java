@@ -2,6 +2,8 @@ package socket;
 import java.net.*;
 import java.io.*;
 
+
+//Il server può mantere più persone collegate contemporaneamente
 public class MultiThreadedServer {
     public static void main(String [] args)
     {
