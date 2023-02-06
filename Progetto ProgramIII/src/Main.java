@@ -4,12 +4,11 @@ import java.util.*;
 
 public class Main{
 
-    //creazione porte per il router//
     public static void main(String[] args) {
 
-
-      ServerThread thread = new ServerThread("Server1");
-        ServerThread thread2 = new ServerThread("Server2");
+//cambiare di qua dato il cambio di serverThread
+      ServerThread thread = new ServerThread(new String[]{"Server1"});
+        ServerThread thread2 = new ServerThread(new String[]{"Server2"});
         thread2.setPriority(Thread.MAX_PRIORITY);
 
         System.out.println(thread2.getName() + " priority: " + thread2.getPriority());

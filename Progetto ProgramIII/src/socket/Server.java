@@ -14,14 +14,14 @@ public class Server {
         PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
         out.println("Benvenuto");
         BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+      //aggiungere richiamo presente in client per la ricevuta di file
+            //poi collegare questa classe al main
         String clientInput = input.readLine();
         System.out.println(clientInput);
         input.close();
         out.close();
 
         socket.close();
-
-
         }
     }
 }

@@ -1,1 +1,0 @@
-il valore di var1 è: 10
