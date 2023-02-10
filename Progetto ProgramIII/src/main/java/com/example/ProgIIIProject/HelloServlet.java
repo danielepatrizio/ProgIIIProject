@@ -1,4 +1,4 @@
-package com.example.ProgIIIProject;
+package main.java.com.example.ProgIIIProject;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
